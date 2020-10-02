@@ -1,0 +1,105 @@
+#include "tb3\loadouts.hpp"
+class CfgFunctions {
+	class tb3 {
+        #include "tb3\f\gear\CfgFunctions.hpp"
+	};
+	class h {
+		class enemy {
+			class spawnLocal {
+				file = "functions\fspawnLocal.sqf";
+			};
+			class LocalEnemy {
+				file = "functions\fLocalEnemy.sqf";
+			};
+			class MotorEnemy {
+				file = "functions\fMotorEnemy.sqf";
+			};
+			class endConditions {
+				file = "functions\fEndConditions.sqf";
+			};
+			class endGame {
+				file = "functions\fEndGame.sqf";
+			};
+		};
+	};
+};
+
+class CfgDebriefing
+{
+	class endDeath
+	{
+		title = "You all died.";
+		description = "You're really not very good at this.";
+		picture = "KIA";
+	};
+	class endWin1
+	{
+		title = "Objective complete.";
+		description = "Took your sweet bloody time.";
+		picture = "b_inf";
+	};
+	class endWin2
+	{
+		title = "Objective complete.";
+		description = "The deaths of our diplomats are on your concious, Thawk.";
+		picture = "b_inf";
+	};
+	class endWin3
+	{
+		title = "Objective complete.";
+		description = "I'd blame your leaders if I were you.";
+		picture = "b_inf";
+	};
+	class endWin4
+	{
+		title = "Objective complete.";
+		description = "At least you got more than half of the EPs out.";
+		picture = "b_inf";
+	};
+	class endWin5
+	{
+		title = "Objective complete.";
+		description = "Was it ever really worth it?";
+		picture = "b_inf";
+	};
+	class endWin6
+	{
+		title = "Objective complete.";
+		description = "You might as well have not bothered.";
+		picture = "b_inf";
+	};
+	class endWin7
+	{
+		title = "Objective complete.";
+		description = "Well that's ended all of your careers.";
+		picture = "b_inf";
+	};
+	class endLose
+	{
+		title = "Objective failed.";
+		description = "Was hardly unexpected let's be honest.";
+		picture = "o_inf";
+	};
+};
+
+OnLoadName  = "Op SINGING SLUG";
+OnLoadMission = "US Special Forces conduct a hostile Non-combatant Extraction Operation (NEO).";
+author = "Herbiie";
+briefingName = "Op SINGING SLUG v1";
+overviewText = "US Special Forces conduct a hostile Non-combatant Extraction Operation (NEO).";
+overviewPicture = "";
+loadScreen = "";
+disabledAI = 1;
+saving = 0;
+respawn = 3;
+respawnDelay = 2;
+respawnOnStart = -1;
+respawnTemplates[] = {"MenuPosition"};
+enableDebugConsole	= 1;
+enableTargetDebug = 1;
+class Header
+{
+	gameType =  COOP;
+	minPlayers =  23;
+	maxPlayers = 23;
+};
